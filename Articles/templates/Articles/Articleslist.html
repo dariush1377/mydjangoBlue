@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Articles</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href=" {% static 'style.css'%}">
+    </head>
+    <body>
+        <h1>Articles list 1</h1>
+         {%for Article in Articles%}
+        <h2><a href='#'>{{Article.title}}</a></h2>
+         <p>{{Article.snippet}}</p>
+         <p>{{Article.date}}</p>
+        {%endfor%} 
+        <script src="" async defer></script>
+    </body>
+</html>
