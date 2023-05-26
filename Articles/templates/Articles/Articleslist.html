@@ -11,12 +11,14 @@
         <link rel="stylesheet" href=" {% static 'style.css'%}">
     </head>
     <body>
-        <h1>Articles list 1</h1>
+        <div class="containe">
+            <h1>Articles list 1</h1>
          {%for Article in Articles%}
         <h2><a href='#'>{{Article.title}}</a></h2>
          <p>{{Article.snippet}}</p>
          <p>{{Article.date}}</p>
         {%endfor%} 
+        </div>
         <script src="" async defer></script>
     </body>
 </html>
